@@ -1,0 +1,2 @@
+telegraf:
+  pkg.installed
