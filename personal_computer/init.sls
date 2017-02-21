@@ -1,5 +1,6 @@
 include:
   - influxdb
+  - telegraf
 
 /etc/salt/last_updated:
   file.managed:
