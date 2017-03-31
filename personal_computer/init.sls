@@ -2,6 +2,7 @@ include:
   - influxdb
   - telegraf
   - grafana
+  - consul
 
 /etc/salt/last_updated:
   file.managed:
