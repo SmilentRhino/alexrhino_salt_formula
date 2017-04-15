@@ -3,6 +3,7 @@ include:
   - telegraf
   - grafana
   - consul
+  - git
 
 /etc/salt/last_updated:
   file.managed:
