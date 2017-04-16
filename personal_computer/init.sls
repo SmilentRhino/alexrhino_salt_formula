@@ -4,6 +4,7 @@ include:
   - grafana
   - consul
   - git
+  - users
 
 /etc/salt/last_updated:
   file.managed:
