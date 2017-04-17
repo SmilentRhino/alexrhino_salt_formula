@@ -11,7 +11,7 @@ virtualenv:
   pip.installed:
     - name: virtualenv
     - require:
-      - pkg: python3-pip 
+      - pkg: python.packages 
 
 /usr/local/venvs/python3:
   virtualenv.managed:
