@@ -1,7 +1,7 @@
 {% set user_name=pillar.get('user_name', 'alexrhino') %}
 
 python.packages:
-  pkgs.installed:
+  pkg.installed:
     - pkgs:
       - python3
       - python3-dev
@@ -11,7 +11,7 @@ virtualenv:
   pip.installed:
     - name: virtualenv
     - require:
-      - user: python3-pip 
+      - pkg: python3-pip 
 
 /usr/local/venvs/python3:
   virtualenv.managed:
