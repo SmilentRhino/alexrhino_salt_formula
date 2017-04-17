@@ -2,7 +2,7 @@
 
 python.packages:
   pkgs.installed:
-    pkgs:
+    - pkgs:
       - python3
       - python3-dev
       - python3-pip
