@@ -16,5 +16,6 @@ virtualenv:
 /usr/local/venvs/python3:
   virtualenv.managed:
     - user: {{ user_name }}
+    - python: /usr/bin/python3
     - system_site_packages: False
     - requirements: salt://virutalenv/files/requirements.text
