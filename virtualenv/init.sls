@@ -2,9 +2,10 @@
 
 python.packages:
   pkgs.installed:
-    - python3
-    - python3-dev
-    - python3-pip
+    pkgs:
+      - python3
+      - python3-dev
+      - python3-pip
 
 virtualenv:
   pip.installed:
