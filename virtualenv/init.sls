@@ -6,6 +6,7 @@ python.packages:
       - python3
       - python3-dev
       - python3-pip
+      - python-pip
 
 virtualenv:
   pip.installed:
