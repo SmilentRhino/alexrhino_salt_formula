@@ -5,6 +5,7 @@ include:
   - consul
   - git
   - users
+  - virtualenv
 
 /etc/salt/last_updated:
   file.managed:
