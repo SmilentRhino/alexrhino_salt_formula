@@ -10,6 +10,7 @@ python.packages:
 virtualenv:
   pip.installed:
     - name: virtualenv
+    - bin_env: /usr/bin/pip3
     - require:
       - pkg: python.packages 
 
