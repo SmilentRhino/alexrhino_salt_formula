@@ -1,3 +1,7 @@
+{% set refresh_git=pillar.get('refresh_git', false) %}
+
+{% if refresh_git == true %}
+
 alexrhino_blog:
   git.latest:
     - name: git@github.com:SmilentRhino/SmilentRhino.github.io.git 
@@ -5,8 +9,7 @@ alexrhino_blog:
     - user: alexrhino
 
 PyMySQL:
-  git.latest:
-    - name: git@github.com:PyMySQL/PyMySQL.git 
+  git.latest: - name: git@github.com:PyMySQL/PyMySQL.git 
     - target: /home/alexrhino/github_repos/PyMySQL 
     - user: alexrhino
 
@@ -52,3 +55,4 @@ hosts:
     - target: /home/alexrhino/github_repos/hosts
     - user: alexrhino
 
+{% endif %}
