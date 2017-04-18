@@ -10,7 +10,7 @@ python.packages:
       - python-pip
 
 
-/usr/local/venvs/python3:
+/home/{{ user_name }}/venvs/python3:
   virtualenv.managed:
     - user: {{ user_name }}
     - python: /usr/bin/python3
