@@ -6,14 +6,9 @@ python.packages:
       - python3
       - python3-dev
       - python3-pip
+      - python3-virtualenv
       - python-pip
 
-virtualenv:
-  pip.installed:
-    - name: virtualenv
-    - bin_env: /usr/bin/pip3
-    - require:
-      - pkg: python.packages 
 
 /usr/local/venvs/python3:
   virtualenv.managed:
