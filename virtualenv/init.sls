@@ -15,4 +15,4 @@ python.packages:
     - user: {{ user_name }}
     - python: /usr/bin/python3
     - system_site_packages: False
-    - requirements: salt://virutalenv/files/requirements.text
+    - requirements: salt://virtualenv/files/requirements.text
